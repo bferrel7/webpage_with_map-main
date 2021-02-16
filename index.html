@@ -50,9 +50,9 @@
       </p>
       <hr class="line1" width="100%">
     </div>
-    <div class="four columns">
-      <a href="href="https://charlottejoyrides.com/"><img class="float:right"
-        src="https://www.bcycle.com/images/librariesprovider44/default-album/joyrides_logo_white_and_green.png" height = "100" width="200" style="float:right;"></a>
+    <div class="two columns">
+      <a href="href="https://charlottejoyrides.com/"><img class="scale-with-grid"
+        src="https://www.bcycle.com/images/librariesprovider44/default-album/joyrides_logo_white_and_green.png" height = "200" width="400" style="float:right;"></a>
     </div>
     <div class="twelve columns">
       <h3>Introduction</h3>
@@ -61,8 +61,7 @@
       Charlotte B-cycle launched in 2012 with only 200 bikes and 20 stations, but through various sponsorships, grants, and support over the last eight years, the company has grown to its current size. 
       In addition to providing its services, Charlotte B-cycle also works to support the local community. 
       When you see one of their bikes whizzing around town, you'll  notice each bike sports a piece of art created by a local artist.
-      <br> 
-      <br>Below we have different map plots that display where our data is, where the docks are located, and trends that occur. </h5>
+      <br> Below we have different map plots that display where our data is, where the docks are located, and trends that occur. </h5>
     </div>
   </div>
 
@@ -100,19 +99,6 @@
   </div>
 
 
-                               
-                               
-                               
-    <div class="container one-bottom" >
-    <h2>This is Heading 2</h2>
-    <h3>This is Heading 3</h3>
-    <h4>This is Heading 4</h4>
-    <h5>This is Heading 5</h5>
-    <p>This is paragraph text p</p>
-  </div>                            
-                               
-                               
-   
   <div id="map_3" class="one-bottom"></div>
 
 
@@ -132,56 +118,7 @@
       <img class="four columns scale-with-grid quarter-bottom-rel" src="https://charlotteaxios-charlotteagenda.netdna-ssl.com/wp-content/uploads/2015/08/IMG_6489.jpg">
     </div>
   </div>
-  
 
-  </head>
-    <style>
-      .img-container {
-        text-align: center;
-      }
-    </style>
-  
-    <div class="img-container">
-      <img src="https://charlotteaxios-charlotteagenda.netdna-ssl.com/wp-content/uploads/2015/08/IMG_6486.jpg"> 
-    </div>
-
-    <h2>Charlotte B-Cycle docks</h2>
-                                                                                                              
-                                                                                                              
-                                                                                                              
-                                                                                                              
-                                                                                                              
-                                                                                                              
-    <style>
-      .img-container {
-        text-align: center;
-      }
-    </style>
-  
-    <div class="img-container">
-      <img src="https://charlotteaxios-charlotteagenda.netdna-ssl.com/wp-content/uploads/2015/08/IMG_6489.jpg"> 
-    </div>
-                                                                                                        
-    
-                                                                                       
-     <style>
-      .img-container {
-        text-align: center;
-      }
-    </style>
-  
-    <div class="img-container">
-      <img src="https://bikeshare.cc/wp-content/uploads/2018/01/Charlotte_Bcycle_1.jpg"> 
-    </div>                                                                                
-                                                                                                        
-        
-                                                                                       
-                                                                                       
-                                                                                       
-                                                                                       
-                                                                                       
-                                                                                       
-                                                                                       
   <div class="container one-bottom" >
     <h2>This is Heading 2</h2>
     <h3>This is Heading 3</h3>
@@ -213,7 +150,7 @@
   .setView([35.22732,-80.83827], 10)
   .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
   map_1
-  .scrollWheelZoom.enable();
+  .scrollWheelZoom.disable();
 
 
   d3.json("mergedFiles.json", function(json) {
@@ -223,7 +160,7 @@
     .setView([35.22732,-80.83827], 12)
     .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
     map_2
-    .scrollWheelZoom.enable();
+    .scrollWheelZoom.disable();
 
     json.data.stations.forEach(function(station){
       station.lat = +station.lat;
@@ -243,7 +180,7 @@
     .setView([35.22732,-80.83827], 12)
     .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'));
     map_3
-    .scrollWheelZoom.enable();
+    .scrollWheelZoom.disable();
 
     json.data.stations.forEach(function(station){
       station.lat = +station.lat;
